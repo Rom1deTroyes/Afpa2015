@@ -1,0 +1,109 @@
+Aire2Java	application de gestion de groupes et de rencontres culturelles
+AireDeJava	Une association de groupes folkloriques
+
+-----
+	Données Métier
+
+-----
+		Données Métiers
+Groupes
+	groupe_caractéristiques
+	groupe_dénomination	CONTRAINTE : cette dénomination peut changer dans le temps
+	groupe_correspondant	-> Correspondants
+	groupe_régionsPays
+
+RégionsPays	Une région peut être à cheval sur plusieurs pays.
+	Pays	Nom du Pays
+	Région	Nom de la région
+
+groupe affiliés
+rencontres (culturelles)
+Oeuvres
+
+
+Correspondants	Nom, prénom, titre de civilité, adresse; téléphone, fax, e-mail
+
+Organisateur	Nom, prénom, titre de civilité, adresse; téléphone, fax, e-mail
+
+
+Membres	Nom, prénom, civilité, date de naissance
+	Membre spécialités	soliste, choriste, musicien	CONTRAINTE : il peut en avoir plusieurs
+	instruments pratiqués	Pour le musiciens
+	membre responsabilité	au sein du groupe (trésorier, dirigeant, chauffeur, habilleur)	CONTRAINTE : on ne considère que la responsabilité majeure
+
+
+Oeuvre	CONTRAINTE : Certains titres concerneront plusieurs groupes, d'autres seront une particularité d'un groupe
+	oeuvre_titre 
+	oeuvre_date	Époque de l'apparition du titre
+	oeuvre_auteur	Nom, prénom de l'auteur s'il est connu
+	oeuvre_durée
+	oeuvre_type	danse, chant, danse et chant, conte, ...
+
+
+Rencontre
+	rencontre_nom
+	rencontre_lieu 
+	rencontre_organisateur	Nom, prénom, titre de civilité, adresse; téléphone, fax, e-mail 
+	date_début	du prochain déroulement 
+	date_fin	du prochain déroulement
+	périodicité	de la rencontre : unique, annuelle, ... 
+	Nb_personnesi	Nombre de personnes attendues 
+
+Programme
+	Groupe 
+	Date de passage
+	heure_dbut	de la prestation
+	heure_fin	de la prestation
+	lieu	de la présentation
+
+Représentations
+	Groupe
+	titres présentés	
+	temps prévu par titre
+
+civilites	titres de civilité
+-----
+		Associations
+
+participer-groupe-rencontre
+
+-----
+	Processus Métier
+Interrogations
+Interrogation des groupes jouant un titre donné. 
+	Interrogation des rencontres où un titre a été interprété. 
+	Interrogation des membres ayant une spécialité donnée pour une rencontre donnée. 
+	Interrogation des titres de plus de x minutes pour un pays ou une région donnés. 
+	Interrogation des rencontres ayant eu n groupes participants. 
+	Interrogation des rencontres où on a joué d'un instrument donné 
+
+Sauvegarde
+Restauration
+Gestion Utilisateurs
+
+Gestion des groupes
+Gestion des membres composant un groupe 
+Gestion du répertoire des groupes
+Gestion des rencontres culturelles
+Gestion des caractéristiques des rencontres
+Gestion du programme des rencontres 
+Gestion des représentations des groupes pour une rencontre 
+
+-----
+	IHM
+
+écran d'accueil Attrayant + logo
+barre des menus (Groupes, Rencontres, Oeuvres, Interrogations, Outils avec options : sauvegarde, restauration, utilisateurs)
+boite de dialogue "demande mot de passe"
+Pour chaque interrogations, on souhaite voir 2 panneaux ; 
+	1 panneau pour la saisie des critères de recherche, 
+	1 panneau pour le résultat sous forme de liste. 
+
+-----
+	LDA
+profil utilisateur	definit les accès aux options du menu
+Profil administrateur	ayant tous les droits
+Profil utilisateur	n'ayant pas accès aux outils
+Profil invité	n'ayant accès qu'aux interrogations
+
+
