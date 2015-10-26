@@ -1,0 +1,28 @@
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'accordéon');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'bombarde');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'chalumeau');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'dulcimer');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'épinette des Vosges');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'flûte traversière');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'guitare folk');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'harpe celtique');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'insibi');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'jeu de timbre');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'kazoo');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'lyre du Moyen Âge');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'musette');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'nickelharfe');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'ocarina');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'psaltérion');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'quinterna');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'rebec');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'sacqueboute');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'trombone à pistons');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'ukulélé');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'vielle à roue');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'wood-block');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'xylophone');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'youkoulélé');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(SEQ_INSTRUMENTS.nextval,'zourna');
+INSERT INTO instruments (Id_instrument, instrument_label) VALUES(5,'voix');
+

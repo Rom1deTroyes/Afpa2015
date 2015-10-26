@@ -1,0 +1,17 @@
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (10,'musicien');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (11,'soliste');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (12,'accompagnemnt');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (20,'chanteur');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (21,'soliste');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (22,'choriste');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (23,'lyrique');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (24,'ténor');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (25,'soprano');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (26,'contralto');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (27,'baryton');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (40,'auteur-compositeur-interprète');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (41,'Parolier');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (42,'compositeur');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (50,'danseur');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (60,'conteur');
+INSERT INTO specialites (Id_specialite, specialite_label) VALUES (90,'enseignant');

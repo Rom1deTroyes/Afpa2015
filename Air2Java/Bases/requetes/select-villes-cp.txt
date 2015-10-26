@@ -1,0 +1,1 @@
+select ville_nom, ville_code_postal  from villes_france where ville_nom like '%&ville%' ;
