@@ -1,0 +1,5 @@
+# Rewrite an url from xxx/yyy/zzz to index.php?control=xxx&action=yyy&id=zzz
+# object(Air2Java\Fw\Requete)[1] private 'parametres' =>  array (size=4) 'c' => string 'connexion' (length=9) 'a' => string 'connect' (length=7) 'id' => string 'zzz' (length=3)
+# @TODO A revoir pour les autres paramètres, passés en private 'session' => object(Air2Java\Fw\Session)[2]
+RewriteEngine on
+RewriteRule ^([a-zA-Z]*)/?([a-zA-Z]*)?/?([a-zA-Z0-9]*)?/?$ index.php?c=$1&a=$2&id=$3 [NC,L]

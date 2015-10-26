@@ -1,0 +1,94 @@
+<?php
+/* Air2Java
+ * (c)2014 Rom1
+ */
+
+//~ Template for index.php
+// variables:
+//  $template - page to be displayed (included)
+?>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Air de Java</title>
+        <meta name="description" content="Air2Java - Musiques Folkloriques" />
+        <meta name="keywords" content="Air2Java, Airs, Javas, Musiques, Floklores, Folkloriques, Danses" />
+        <meta name="author" content="Rom1deTroyes" />
+        <meta name="generator" content="GVim">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body id="page">
+        <div id="main">
+            <!-- header -->
+            <div id="header">
+                <div class="logo">
+                    <img src="" alt="Logo" />
+                </div>
+                <div class="title">
+                    <h1>Air de Java</h1>
+                </div>
+                <div id="connexion" class="connexion">
+                    <p>User
+                        <br /> Pass
+                    </p>
+                </div>
+            </div>
+            <div class="menu">
+                <nav>Navigation
+                    <ul>
+                        <li>Lorem
+                            <ul>
+                                <li>ipsum</li>
+                                <li>dolor</li>
+                                <li>sit</li>
+                                <li>amet</li>
+                            </ul>
+                            <ul>
+                                <li>consectetuer</li>
+                                <li>adipiscing</li>
+                                <li>elit</li>
+                            </ul>
+                        </li>
+                        <li>Maecenas
+                            <ul>
+                                <li>sit</li>
+                                <li>amet</li>
+                                <li>metus</li>
+                            </ul>
+                        </li>
+                        </ul>
+                        <ul class="list">
+                            <li><span><a href="<?php echo Utils::createLink('home'); ?>">Home</a></span></li>
+                            <li><span><a href="<?php echo Utils::createLink('list', array('status' => Todo::STATUS_PENDING)); ?>"
+                                         ><img src="img/status/PENDING.png" alt="" title="Pending TODOs" class="icon" />Pending TODOs</a></span></li>
+                            <li><span><a href="<?php echo Utils::createLink('list', array('status' => Todo::STATUS_DONE)); ?>"
+                                         ><img src="img/status/DONE.png" alt="" title="Done TODOs" class="icon" />Done TODOs</a></span></li>
+                            <li><span><a href="<?php echo Utils::createLink('list', array('status' => Todo::STATUS_VOIDED)); ?>"
+                                         ><img src="img/status/VOIDED.png" alt="" title="Voided TODOs" class="icon" />Voided TODOs</a></span></li>
+                            <li class="last"><span><a href="<?php echo Utils::createLink('add-edit'); ?>"
+                                                      ><img src="img/action/add.png" alt="" title="Add TODO" class="icon" />Add TODO</a></span></li>
+                        </ul>
+                </nav>
+            </div>
+            <!-- content -->
+            <div id="content">
+                <nav class="Ariane" id="ariane">Ariane</nav>
+
+
+
+            </div>
+
+            <!-- footer -->
+            <div id="footer" class="fright"><a href="http://localhost:88/Air2Java/">Air de Java</a>, 2014 &copy; Air2Java., All rights reserved</div>
+
+        </div>
+    </body>
+</html>
+
+
+
+

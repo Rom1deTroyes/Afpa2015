@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <title>Individus</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/layout.css">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../../css/style.css" type="text/css">
+
+        <meta content="Rom1" name="author">
+        <meta content="Gestion des Individus" name="description">
+        <meta content="air2Java, toutça" name="keywords">
+
+    </head>
+    <body>
+        <div id="bd">
+            <div class="individu">
+                <form autocomplete="on" method="POST" enctype="multipart/form-data" action="individus.php" name="invididu" id="individu">
+                    <fieldset id="identite" name="identite" form="individu">
+                        <legend><label><input type="checkbox" name="identite"
+                                       onchange="form.individu.identite.disabled = !checked">Identit&eacute;</label>
+                        </legend>
+                        <label for="civilite">Civilit&eacute;</label>
+                        <select form="individu" name="civilite" id="civilite">
+                            <option selected="selected" disabled="disabled" value="0">Civilite</option>
+                            <option value="perso">Mr</option>
+                            <option value="pro">Mme</option>
+                        </select>
+                        <br /><label for="nom">Nom</label>
+                        <input form="individu" id="nom" name="nom" placeholder="Nom" type="text" required="required" autocomplete="on" maxlength="32" size="24">
+                        <br /><label for="prenom">Pr&eacute;nom</label><input form="individu" id="prenom" name="prenom" placeholder="Prenom" type="text" required="required" autocomplete="on" maxlength="32" size="24">
+                        <br /><label for="date_naissence">Date de naissance</label><input form="individu" id="date_naissence" name="date_naissence" type="date" required="required">
+                    </fieldset>
+                    <fieldset id="adresses" name="adresses" form="individu">
+                        <legend><label><input type="checkbox" name="adresses"
+                                       onchange="form.individu.adresses.disabled = !checked">Adresses</label>
+                        </legend>
+                    <label for="adresse_label">Adresse</label>
+                        <br /><select form="individu" id="adresse_type" name="adresse_type">
+                            <option selected="selected" disabled="disabled" value="0">Type</option>
+                            <option value="perso">Perso</option>
+                            <option value="pro">Pro</option>
+                        </select>
+                        <label for="adresse_type">&nbsp;</label><input id="adresse_label" autocomplete="on" maxlength="128" size="24" form="individu" name="adresse_label" type="text">
+                        <br /><label for="cp">cp</label><input form="individu" id="cp" name="cp" size="6" maxlength="12">
+                        <br /><label for="ville">Ville</label><input maxlength="128" size="12" form="individu" id="ville" name="ville" type="text">
+                        <br /><label for="pays">Pays</label><select size="1" form="individu" id="pays" name="pays">
+                            <option selected="selected" disabled="disabled" value="0">Pays</option>
+                            <option value="33">France</option>
+                            <option value="32">Irlande</option>
+                        </select>
+                    </fieldset>
+                    <fieldset id="emails" name="emails" form="individu">
+                        <legend><label><input type="checkbox" name="emails"
+                                       onchange="form.individu.emails.disabled = !checked">e-mails</label>
+                        </legend>
+                        <label for="email"></label><input autocomplete="on" maxlength="128" size="15" name="email" id="email" form="individu" type="email">
+                        <select form="individu" name="email_type">
+                            <option selected="selected" disabled="disabled" value="0">Type</option>
+                            <option value="perso">Perso</option>
+                            <option value="pro">Pro</option>
+                        </select>
+                    </fieldset>
+                    <fieldset id="telephones" name="telephones" form="individu">
+                        <legend><label><input type="checkbox" name="telephones"
+                                       onchange="form.individu.telephones.disabled = !checked">T&eacute;l&eacute;phones</label>
+                        </legend>
+                    <label for="telephone">Tel</label><input autocomplete="on" maxlength="15" size="10" form="individu" id="telephone" name="telephone" type="tel">
+                        <select form="individu" name="tel_type">
+                            <option selected="selected" disabled="disabled" value="0">Type</option>
+                            <option value="perso">Perso</option>
+                            <option value="pro">Pro</option>
+                        </select>
+                    </fieldset>
+                    <fieldset id="instruments" name="instruments" form="individu" draggable="true">
+                        <legend><label><input type="checkbox" name="instruments"
+                                       onchange="form.individu.instruments.disabled = !checked">Instruments</label>
+                        </legend>
+                        <label for="instrument"></label>
+                        <select form="individu" name="instrument" id="instrument">
+                            <option selected="selected" disabled="disabled" value="0">Instruments</option>
+                            <option value="guitare">Guitare</option>
+                            <option value="piano">Piano</option>
+                        </select>
+                        <select form="individu" name="specialite">
+                            <option selected="selected" disabled="disabled" value="0">Specialites</option>
+                            <option value="choriste">Choriste</option>
+                            <option value="soliste">Soliste</option>
+                        </select>
+                        <div id="joue_en_tant_que" class="item_liste">Instruments joues :
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>consectetuer adipiscing elit</li>
+                                <li>Maecenas sit amet metus</li>
+                                <li>Nunc quam elit</li>
+                                <li>posuere nec</li>
+                                <li>auctor in</li>
+                                <li>rhoncus quis</li>
+                                <li>dui</li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <fieldset id="groupes" name="groupes" form="individu">
+                        <legend><label><input type="checkbox" name="groupes"
+                                       onchange="form.individu.groupes.disabled = !checked">Groupes</label>
+                        </legend>
+                        <label for="groupe"></label>
+                        <select form="individu" id="groupe" name="groupe">
+                            <option selected="selected" disabled="disabled" value="0">Groupes</option>
+                            <option value="Balkanailles">Balkanailles</option>
+                            <option value="HopChaCha">Hop Cha Cha !</option>
+                        </select>
+                        <select form="individu" name="responsabilite">
+                            <option selected="selected" disabled="disabled" value="0">Responsabilite</option>
+                            <option value="chauffeur">Chauffeur</option>
+                            <option value="tresorier">Tresorier</option>
+                        </select>
+                        <div id="est_membre" class="item_liste">Membre des groupes :
+                            <ul>
+                                <li>Aliquam erat volutpat</li>
+                                <li>Ut dignissim</li>
+                                <li>massa sit</li>
+                                <li>amet dignissim cursus</li>
+                                <li>quam lacus feugiat</li>
+                                <li>Lorem ipsum dolor sit</li>
+                                <li>amet</li>
+                                <li>consectetuer adipiscing elit</li>
+                                <li>Maecenas sit amet metus</li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <div id="formControls" class="fnone"><input formmethod="post" form="individu" value="Enregister" name="sauver" type="submit">
+                        <input formmethod="post" form="individu" value="Supprimer" name="suppr" type="submit">
+                        <input form="individu" value="RaZ" name="Raz" type="reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

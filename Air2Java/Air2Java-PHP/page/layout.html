@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Air2Java
+(c)2014 Rom1
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Air de Java</title>
+        <meta name="description" content="Air2Java - Musiques Folkloriques" />
+        <meta name="keywords" content="Air2Java, Airs, Javas, Musiques, Floklores, Folkloriques, Danses" />
+        <meta name="author" content="Rom1deTroyes" />
+        <meta name="generator" content="GVim" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
+        <link href="./css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="./css/menu.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript"  src="./js/libs/jquery.js" ></script>
+    </head>
+    <body id="page">
+        <!-- header -->
+        <div id="header">
+            <div class="logo">
+                <img src="./img/logo.jpg" alt="Logo" width="200" height="150"/>
+            </div>
+            <div class="title">
+                <h1>Air de Java</h1>
+            </div>
+            <div id="connexion" class="connexion">
+                <form name="connexion" action="connexion.php" method="POST">
+                    <label for="nom">User</label><input id="nom" type="text" name="nom" value="user" size="12" />
+                    <br /><label for="password">Pass</label> <input id="password" type="password" name="password" value="" size="12" />
+                </form>
+            </div>
+        </div>
+        <div id="nav" class="nav-v">
+            <ul>
+                <li><a href="./">Accueil</a></li>
+                <li>Groupes
+                    <ul>
+                        <li><a href="./groupe/affich/">Consulter</a></li>
+                        <li><a href="./groupe/ajout/">Ajouter</a></li>
+                        <li><a href="./groupe/modif/">Modifier</a></li>
+                    </ul>
+                </li>
+                <li>Musiciens
+                    <ul>
+                        <li><a href="./musicien/affich/">Consulter</a></li>
+                        <li><a href="./musicien/ajout/">Ajouter</a></li>
+                        <li><a href="./musicien/modif/">Modifier</a></li>
+                    </ul>
+                </li>
+                <li>Concerts
+                    <ul>
+                        <li><a href="./concert/affich/">Consulter</a></li>
+                        <li><a href="./concert/ajout/">Ajouter</a></li>
+                        <li><a href="./concert/modif/">Modifier</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- content -->
+        <div id="content">
+            <div id="ariane" class="nav-h"><ul><li>Ariane</li><li>et</li><li>ses</li><li>fils</li></ul></div>
+            <h1>Makes Ben Hur look like an Epic!</h1> <p>Shut up! I have to push the pram a lot. Why? Now, look here, my good man. The nose?</p> <h2>What&hellip; is your quest?</h2> <p>Now, look here, my good man. And this isn't my nose. This is a false one. No, no, no! Yes, yes. A bit. But she's got a wart.</p> <ul> <li>We want a shrubbery!!</li> <li>Camelot!</li> </ul> <h3>Bridgekeeper</h3> <p>&hellip;Are you suggesting that coconuts migrate? I have to push the pram a lot. Look, my liege! I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time! Shut up! Will you shut up?!</p> <h4>Sets The Cinema Back 900 Years!</h4> <p>You don't vote for kings. She looks like one. But you are dressed as one&hellip;</p> <ol> <li>The Knights Who Say Ni demand a sacrifice!</li> <li>I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time!</li> <li>Did you dress her up like this?</li> </ol> <h5>Am I right?</h5> <p>And this isn't my nose. This is a false one. The Knights Who Say Ni demand a sacrifice! Found them? In Mercia?! The coconut's tropical! What a strange person. I am your king.</p> <h6>Sir Lancelot</h6> <p>I am your king. You can't expect to wield supreme power just 'cause some watery tart threw a sword at you! Bloody Peasant!</p> <p>Now, look here, my good man. Why? Look, my liege! The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land. Well, I got better. Bring her forward!</p> <p>We found them. The Knights Who Say Ni demand a sacrifice! We want a shrubbery!!</p> <p>I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time! But you are dressed as one&hellip; Camelot! Well, we did do the nose. Well, she turned me into a newt. The Knights Who Say Ni demand a sacrifice!</p> <p>Did you dress her up like this? Burn her anyway! Camelot!</p>
+            <fieldset name="clubfields" disabled="">
+                <legend> <label>
+                        <input type="checkbox" name="club" onchange="form.clubfields.disabled = !checked" />
+                        Use Club Card
+                    </label> </legend>
+                <p><label>Name on card: <input name="clubname" required="" /></label></p>
+                <fieldset name="numfields">
+                    <legend> <label>
+                            <input type="radio" checked="" name="clubtype" onchange="form.numfields.disabled = !checked" />
+                            My card has numbers on it
+                        </label> </legend>
+                    <p><label>Card number: <input name="clubnum" required="" pattern="[-0-9]+" /></label></p>
+                </fieldset>
+                <fieldset name="letfields" disabled="">
+                    <legend> <label>
+                            <input type="radio" name="clubtype" onchange="form.letfields.disabled = !checked" />
+                            My card has letters on it
+                        </label> </legend>
+                    <p><label>Card code: <input name="clublet" required="" pattern="[A-Za-z]+" /></label></p>
+                </fieldset>
+            </fieldset>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+            </p>
+            <p>
+                Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
+            </p>
+            <p>
+                Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.
+            </p>
+
+            <p>
+                Aliquam vehicula sem ut pede. Cras purus lectus, egestas eu, vehicula at, imperdiet sed, nibh. Morbi consectetuer luctus felis. Donec vitae nisi. Aliquam tincidunt feugiat elit. Duis sed elit ut turpis ullamcorper feugiat. Praesent pretium, mauris sed fermentum hendrerit, nulla lorem iaculis magna, pulvinar scelerisque urna tellus a justo. Suspendisse pulvinar massa in metus. Duis quis quam. Proin justo. Curabitur ac sapien. Nam erat. Praesent ut quam.
+            </p>
+
+        </div>
+        <!-- footer -->
+        <div id="footer" class="fright">(c)2014 <a href="http://localhost:88/Air2Java/">Air de Java</a>
+        </div>
+    </body>
+</html>

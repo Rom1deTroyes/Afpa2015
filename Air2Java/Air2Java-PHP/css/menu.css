@@ -1,0 +1,73 @@
+/*
+Air2Java
+(c)2014 Rom1
+*/
+/* 
+    Created on : 20 mars 2014, 15:08:27
+    Author     : Rom1
+*/
+
+#nav {
+width: 100px;
+//border: 1px solid #a00;
+padding: 0;
+margin: 0;
+font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
+}
+
+#nav ul {
+//background: transparent url(/imgs/bg-parch.png);
+margin: 0;
+padding: 0;
+}
+
+#nav ul:first-letter, #nav li:first-letter, #nav li a:first-letter {
+    font:bold 1.5em "Old English Text MT",monospace;
+    color: blueviolet;
+    text-transform:uppercase;
+}
+
+#nav li {
+//border-top: 1px solid #a00;
+margin: 0;
+border-bottom: 0;
+}
+#nav li a
+{
+display: block;
+text-decoration: none;
+//border-bottom: 1px;
+}
+
+#nav li a:hover
+{
+border: 1px solid #d1641c;
+//background: transparent url(/imgs/bg-Trencavel.png);
+//list-style: url(../img/puce.png);
+}
+
+/*#nav li li
+{
+border-top: 1px solid #deba90;
+border-bottom: 0;
+margin: 0;
+}*/
+
+#nav li li a
+{
+padding: 4px .5em 4px 1.3em;
+}
+/*
+#nav li li li a
+{
+padding: 3px .5em 3px 1.9em;
+width: 8.2em;
+}*/
+/*
+.nav-h {
+display: inline;
+}
+
+.nav-v {
+display: block;
+}*/

@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Air2Java
+${licensePrefix}(c)2014 Rom1
+<#if licenseLast??>
+${licenseLast}
+</#if>
